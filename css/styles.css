@@ -463,6 +463,7 @@ mark,
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
+.blockquote.sm{}
 
 .blockquote-footer {
   display: block;
@@ -550,7 +551,27 @@ pre code {
   .container {
     max-width: 540px;
   }
+
 }
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .blockquote{
+    font-size: 0.9rem;
+  }
+  .nav-item{
+    background-color: white;
+    padding-top: 0;
+    border: 1px solid white;
+    border-bottom: 1px solid gray;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -4057,7 +4078,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  /*padding: 0.5rem 1rem;*/
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -4072,8 +4093,8 @@ input[type=button].btn-block {
 }
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  /*padding-top: 0.3125rem;*/
+  /*padding-bottom: 0.3125rem;*/
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -4104,7 +4125,7 @@ input[type=button].btn-block {
 .navbar-text {
   display: inline-block;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  /*padding-bottom: 0.5rem;*/
 }
 
 .navbar-collapse {
@@ -4114,7 +4135,7 @@ input[type=button].btn-block {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  /*padding: 0.25rem 0.75rem;*/
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -4485,6 +4506,9 @@ input[type=button].btn-block {
 }
 .card-header + .list-group .list-group-item:first-child {
   border-top: 0;
+}
+.text-blue{
+  color: #f4976c;
 }
 
 .card-footer {
@@ -10151,7 +10175,8 @@ body {
 }
 
 #mainNav {
-  min-height: 3.5rem;
+  max-height: 7.5rem;
+  height: 6rem;
   background-color: #fff;
 }
 #mainNav .navbar-toggler {
@@ -10166,7 +10191,7 @@ body {
 #mainNav .navbar-brand {
   color: #000000;
   font-weight: 700;
-  padding: 0.9rem 0;
+  padding: 0;
 }bg
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
@@ -10299,6 +10324,8 @@ body {
 
 .projects-section {
   padding: 10rem 0;
+  border-radius: 50px;
+  margin: 2rem;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10329,6 +10356,8 @@ body {
   text-align: center;
   font-family: raleway;
   font-weight: 400;
+  border-radius: 50px;
+  margin: 2rem;
   /*height: 20rem;*/
 }
 #meet-hr{
@@ -10451,9 +10480,23 @@ body {
   right: -2.25rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .testimonials {
     max-height: 700px;
+  }
+  .nav-item{
+    text-align: center;
+    width: auto;
+    background-color: #026670;
+    border-radius: 25px;
+    border: 1px solid #026670;
+    border-bottom: 1px solid gray;
+  }
+  .navbar li{
+    margin-top: 1rem;
+  }
+  .blockquote{
+    font-size: 1rem;
   }
   .icon-overlay {
     height: 300px;
@@ -10517,12 +10560,26 @@ body {
 }
 #hori{
   width: 50%;
-  border-top: 1px solid gray;
+  border-top: 1px solid lightgray;
   /*border-bottom: 0.2px solid #000; */
 }
 #mini-bg{
   background: #ed
   ;
+}
+#services{
+  background: #fce181;
+  border-radius: 50px;
+  margin: 2rem;
+  font-family: raleway, sans-serif;
+  padding: 2rem 0;
+}
+#services li{
+  font-weight: 500;
+}
+#hr-serv{
+  border-top: 1px solid black;
+  width: 50%;
 }
 #req-form-head{
   font-size: 3rem;
@@ -10534,4 +10591,8 @@ body {
 }
 #btn-submit{
   text-align: center;
+}
+.ditya-icon{
+  max-height: 8rem;
+  max-width: auto;
 }
